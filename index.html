@@ -2,7 +2,7 @@
 <head>
 <title>Page Title</title>
 </head>
-<body>
+<body style="background-color:powderblue;">
 
 <h2>About HTML </h2>
 <p>HTML stands for Hyper Text Markup Language
@@ -11,17 +11,54 @@ HTML describes the structure of a Web page
 HTML consists of a series of elements
 HTML elements tell the browser how to display the content
 </p>
+<style>
+  table,th,td{
+    border: 1px solid black;
+  }
+</style>
+<h1> <i>Table Contains Inforamtion About Peoples</i></h1>
 <table> 
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Kavana</td>
+    <td>Kashyap</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Sahana</td>
+    <td>Kashyap</td>
+    <td>20</td>
 
 </table>
 <form action="/action_page.php">
     <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
+    <input type="text" id="fname" name="fname"><br><br>
     <label for="lname">Last name:</label><br>
     <input type="text" id="lname" name="lname"><br><br>
-    <input type="submit" value="Submit">
+    <label for="age">Age:</label><br>
+    <input type="text"id="age" name="age"><br><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br><br>
+    <label for="pnumber">Phone number:</label><br>
+    <input type="number" id="pnumber" name="pnumber"><br><br>
+    <label for="college">College Name:</label><br>
+    <input type="text"id="college" namw="college"><br><br>
+    <input type="submit" value="Submit"><br><br>
+    <input type="button" onclick="alert('Your form submitted successfully')" value="Click Me!">
+  </form>
+  <form action="/action_page.php">
+    <h1><i> Which is your favorite language</i></h1>
     <input type="radio" id="html" name="fav_language" value="HTML">
-    <label for="html">HTML</label><br>
+    <label for="html">Html</label><br>
+    <input type="radio" id="c" name="fav_language" value="C">
+    <label for="c">C</label><br>
+    <input type="radio" id="java" name="fav_language" value="Java">
+    <label for="java">Java</label><br>
+    <input type="submit" value="Submit">
   </form>
   
 </body>
